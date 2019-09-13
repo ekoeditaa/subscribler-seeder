@@ -1589,6 +1589,7 @@ const bark_packages = [
 ];
 
 const putin = {
+  id: "1",
   firstName: "Putin",
   lastName: "Vladimir",
   email: "putin@gmail.com",
@@ -1600,7 +1601,8 @@ const putin = {
   deliveryAddresses: []
 };
 
-const putin_profile = (({ firstName, lastName, email, password }) => ({
+const putin_profile = (({ id, firstName, lastName, email, password }) => ({
+  id,
   firstName,
   lastName,
   email,
@@ -1652,6 +1654,7 @@ const donald_profile = (({ id, firstName, lastName, email, password }) => ({
 }))(donald);
 
 const xi_profile = {
+  id: "2",
   firstName: "Jinping",
   lastName: "Xi",
   email: "jinping@mymail.com",
@@ -1667,6 +1670,7 @@ const xi = {
 };
 
 const justin = {
+  id: "3",
   password: "password",
   firstName: "Justin",
   lastName: "Trudeau",
@@ -1678,7 +1682,8 @@ const justin = {
   packageList: shave_packages
 };
 
-const justin_profile = (({ firstName, lastName, email, password }) => ({
+const justin_profile = (({ id, firstName, lastName, email, password }) => ({
+  id,
   firstName,
   lastName,
   email,
