@@ -1608,6 +1608,7 @@ const putin_profile = (({ firstName, lastName, email, password }) => ({
 }))(putin);
 
 const donald = {
+  id: "25",
   firstName: "Donald",
   lastName: "Trump",
   email: "donald@mymail.com",
@@ -1627,10 +1628,23 @@ const donald = {
       note: "",
       label: "work"
     }
+  ],
+  subscriptionList: [
+    {
+      merchantId: "3",
+      packageId: "f11ae26e-d523-11e9-bb65-2a2ae2dbcce4", 
+      subscriptionPlanId: "cec9abe0-d524-11e9-bb65-2a2ae2dbcce4"
+    },
+    {
+      merchantId: "1",
+      packageId: "b018400d-a81a-4a7e-8d1c-3dae05d062f6", 
+      subscriptionPlanId: "03b7566f-e6f4-41cf-b21a-4aef97339bdc"
+    }
   ]
 };
 
-const donald_profile = (({ firstName, lastName, email, password }) => ({
+const donald_profile = (({ id, firstName, lastName, email, password }) => ({
+  id,
   firstName,
   lastName,
   email,
@@ -1730,4 +1744,3 @@ createXi();
 createPutin();
 createJustin();
 createDonald();
-
